@@ -1,26 +1,9 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
-import { Text, View, StyleSheet } from 'react-native';
+import { Text, View } from 'react-native';
+import { DoubleBounce } from 'react-native-loader';
 import { loadTodos } from '../../store/reducers/todos';
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5
-  },
-});
+import { appCss } from '../../styles/';
 
 @connect(null, { loadTodos })
 export default class App extends Component {
@@ -35,10 +18,8 @@ export default class App extends Component {
 
   render() {
     return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>
-          123
-        </Text>
+      <View style={appCss.container}>
+        <DoubleBounce size={10} color="#1CAFF6" />
       </View>
     );
   }
