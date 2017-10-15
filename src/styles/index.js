@@ -6,15 +6,25 @@ export const appCss = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#FFFFFF',
+  }
+});
+
+export const headerCss = StyleSheet.create({
+  container: {
+    width: '100%',
+    marginTop: 30,
+    justifyContent: 'space-between',
+    flexDirection: 'row',
   },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5
-  },
+  title: {
+    color: '#0366d6',
+  }
+});
+
+export const todoListCss = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  }
 });

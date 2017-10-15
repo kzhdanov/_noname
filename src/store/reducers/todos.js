@@ -1,6 +1,4 @@
-const initialState = {
-  text: 'Holo Man',
-};
+const initialState = {};
 
 const TODOS = 'TODOS';
 export const LOAD_TODOS = `${TODOS}/LOAD_TODOS`;
